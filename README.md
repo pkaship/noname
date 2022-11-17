@@ -104,9 +104,8 @@ void loop()
  Serial.print("Humidity Value is :");
  Serial.print(humidity);
  Serial.println("%");
- // Write to ThingSpeak. There are up to 8 fields in a channel, allowing you to store
-up to 8 different
- // pieces of information in a channel. Here, we write to field 1 and field2.
+
+
  if (data_state)
  {
  ThingSpeak.writeField(myChannelNumber, 1, temperature, myWriteAPIKey);
